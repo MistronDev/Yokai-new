@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YokaiScan - Home</title>
+  <link rel="stylesheet" href="topbarsidebar.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="background.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="left">
+      <a href="home.html" class="back-btn">← Voltar</a>
+    </div>
+    <div class="right">
+      <div class="search-btn" onclick="toggleSearch(event)">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu(event)">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Pesquisa -->
+  <div id="search-bar" class="search-bar">
+    <input type="text" id="search-input" placeholder="Digite sua pesquisa..." onkeyup="searchManga()">
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div id="side-menu" class="side-menu">
+    <div class="profile-section">
+      <span class="material-icons">account_circle</span>
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="https://tipa.ai/TIPAINPF7OR9WU2T0JR9EP1RQEVY" target="_blank">Doar</a></li>
+      <li><a href="support.html">Suporte</a></li>
+      <li><a href="register.html">Criar conta</a></li>
+      <li><a href="login.html">Logar</a></li>
+    </ul>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <section class="simple-home">
+      <h1>Parte dos mangás e home</h1>
+    </section>
+  </main>
+
+  <script src="topbarsidebar.js"></script>
+</body>
+</html>

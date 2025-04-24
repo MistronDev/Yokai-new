@@ -1,0 +1,93 @@
+/* Reseta margens, padding e define box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Capítulo do Mangá */
+.chapter {
+    margin-top: 80px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.chapter .manga-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chapter-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chapter-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Fim do capítulo */
+.end-chapter {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.end-chapter p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff66cc;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #ff66cc;
+}
+
+/* Comentários e Recomendações */
+.comments-section {
+    margin-top: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.recommendations {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.recommendations h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff66cc;
+    margin-bottom: 10px;
+}
+
+.recommendations hr {
+    border: 0;
+    border-top: 1px solid #ff66cc;
+    margin-bottom: 30px;
+}
+
+.manga-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.manga-card {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ff66cc;
+}

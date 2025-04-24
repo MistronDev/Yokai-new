@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - YokaiScan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Entrar na <span class="highlight">YokaiScan</span></h2>
+    <form onsubmit="return false">
+      <input type="email" placeholder="Email" required />
+      <div class="show-password">
+        <input type="password" placeholder="Senha" id="password" required />
+        <i class="fas fa-eye" id="toggleIcon" onclick="togglePassword('password', 'toggleIcon')"></i>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="divider">ou</p>
+    <button class="google-btn">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" />
+      Entrar com Google
+    </button>
+    <p class="divider">
+      Esqueceu sua senha? <a href="#" class="link-text">Clique aqui</a>
+    </p>
+    <p class="divider">
+      Não tem conta? <a href="register.html" class="link-text">Criar agora</a>
+    </p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+/* Hero Banner */
+#hero-banner {
+    background: url('imagem-de-fundo.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#hero-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero-banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero-banner .btn-primary {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#hero-banner .btn-primary:hover {
+    background-color: #0097a7;
+}
+
+/* Últimos Mangás */
+.latest-mangas {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.latest-mangas h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.manga-grid p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.load-more {
+    text-align: center;
+}
+
+#load-more-btn {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-more-btn:hover {
+    background-color: #0097a7;
+}
+
+.simple-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.simple-home h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+}

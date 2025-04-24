@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background.css"> <!--corpo do site --> 
+    <!-- topbar e sidebar) -->
+    <link rel="stylesheet" href="topbarsidebar.css">
+
+    <link rel="stylesheet" href="mangasettings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Leitura de Mangá</title>
+</head>
+<body onclick="closeMenu(event)"> <!-- Adiciona o evento para fechar o menu ao clicar fora -->
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="left">
+            <a href="manga.html" class="back-btn">← Voltar</a>
+        </div>
+        <div class="right">
+            <div class="search-btn" onclick="toggleSearch(event)">
+                <span class="material-icons">search</span> <!-- Ícone de pesquisa -->
+            </div>
+            <div class="menu-btn" onclick="toggleMenu(event)">
+                <span class="material-icons">menu</span> <!-- Ícone de menu hamburguer -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <div id="search-bar" class="search-bar">
+        <input type="text" id="search-input" placeholder="Digite sua pesquisa..." onkeyup="searchManga()">
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="side-menu" class="side-menu">
+        <div class="profile-section">
+            <span class="material-icons">account_circle</span> <!-- Ícone de anonimato -->
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+             <li><a href="https://tipa.ai/TIPAINPF7OR9WU2T0JR9EP1RQEVY" target="_blank" rel="noopener noreferrer">Doar</a></li>
+                   <li><a href="support.html">Suporte</a></li>
+                   <li><a href="register.html">Criar conta</a></li>
+                   <li><a href="login.html">Logar</a></li>
+                 </ul>
+               </div>
+      
+
+    <!-- Capítulo do Mangá -->
+    <section class="chapter">
+        <h1 class="manga-title">Espaço para o capítulo do mangá</h1>
+        
+        <div class="chapter-images">
+            <!-- Imagens do capítulo a serem inseridas aqui -->
+        </div>
+
+        <div class="end-chapter">
+            <p>Fim do Capítulo</p>
+            <span class="arrow">↓</span>
+        </div>
+
+        <div class="comments-section">
+            <p>Sessão de comentários aqui</p>
+        </div>
+
+        <div class="recommendations">
+            <h3>☆ RECOMENDAÇÕES CASO VOCÊ CURTIU ESSE</h3>
+            <hr>
+            <div class="manga-cards">
+                <div class="manga-card">
+                    <p>Manga 1...</p>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+                <div class="manga-card">
+                    <p>Manga 2...</p>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+                <div class="manga-card">
+                    <p>Manga 3...</p>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+                <div class="manga-card">
+                    <p>Manga 4...</p>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+                <div class="manga-card">
+                    <p>Manga 5...</p>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="topbarsidebar.js"></script>
+
+</body>
+</html>

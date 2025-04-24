@@ -1,0 +1,95 @@
+
+.manga-container {
+  max-width: 900px;
+  margin: 6rem auto 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.manga-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cover {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 0, 255, 0.1);
+}
+
+.info h1 {
+  font-size: 2rem;
+  color: #ff66cc;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  margin: 0.3rem 0;
+}
+
+.rating {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ffc0f7;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.sinopse,
+.chapters,
+.comments-placeholder {
+  margin-top: 2rem;
+}
+
+.sinopse h2,
+.chapters h2,
+.comments-placeholder h2 {
+  color: #ffa7e5;
+  margin-bottom: 1rem;
+}
+
+.chapters ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chapters li {
+  margin-bottom: 0.5rem;
+}
+
+.chapters a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.chapters a:hover {
+  color: #ff66cc;
+}
+
+.comments-placeholder {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(255, 0, 255, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-bottom: 2rem;
+}
+
+.comments-placeholder p {
+  color: #ccc;
+  opacity: 0.7;
+  font-style: italic;
+}

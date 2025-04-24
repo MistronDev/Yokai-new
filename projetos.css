@@ -1,0 +1,183 @@
+/* A área principal vai ocupar o espaço disponível e empurrar o footer para baixo */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+/* Estilo da grid de mangas */
+.grid-mangas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Container para as mangas */
+.manga-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 160px;
+}
+
+/* Card do manga */
+.manga-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background 0.3s ease;
+  width: 160px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.manga-card:hover {
+  transform: scale(1.04);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.manga-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+}
+
+.manga-card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.avaliacao {
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: #ffc107;
+}
+
+.btn-favoritar {
+  margin-top: auto;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Header interno */
+header h1 {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Filtros */
+.filtros {
+  text-align: center;
+  margin: 3rem 0 2rem 0; /* antes estava só margin-bottom */
+}
+
+.filtros select {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.filtros select:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Paginação */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.paginacao button {
+  width: 42px;
+  height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.paginacao button.ativo {
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0a0a0a;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 360px) {
+  .grid-mangas {
+    padding: 1rem;
+  }
+
+  .manga-card {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .paginacao {
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-mangas {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .manga-wrapper {
+    width: 180px;
+  }
+
+  .manga-card {
+    width: 160px;
+  }
+}

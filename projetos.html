@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projetos - YokaiScan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="background.css">
+  <link rel="stylesheet" href="topbarsidebar.css">
+  <link rel="stylesheet" href="projetos.css">
+</head>
+<body class="pagina-projetos">
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="left">
+      <a href="home.html" class="back-btn">← Voltar</a>
+    </div>
+    <div class="right">
+      <div class="search-btn" onclick="toggleSearch(event)">
+        <span class="material-icons">search</span>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu(event)">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Pesquisa -->
+  <div id="search-bar" class="search-bar">
+    <input type="text" id="search-input" placeholder="Digite sua pesquisa..." onkeyup="searchManga()">
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div id="side-menu" class="side-menu">
+    <div class="profile-section">
+      <span class="material-icons">account_circle</span>
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="https://tipa.ai/TIPAINPF7OR9WU2T0JR9EP1RQEVY" target="_blank" rel="noopener noreferrer">Doar</a></li>
+      <li><a href="support.html">Suporte</a></li>
+      <li><a href="register.html">Criar conta</a></li>
+      <li><a href="login.html">Logar</a></li>
+    </ul>
+  </div>
+
+  <!-- Header com filtros -->
+  <section class="header-projetos">
+    <h1>Projetos</h1>
+    <div class="filtros">
+      <select id="filtro-genero">
+        <option value="">Gênero</option>
+        <option>Aventura</option>
+        <option>Comédia</option>
+        <option>Drama</option>
+        <option>Esporte</option>
+        <option>Slice of Life</option>
+        <option>Mecha</option>
+        <option>Yuri</option>
+        <option>Seinen</option>
+        <option>Shounen</option>
+        <option>Shoujo</option>
+        <option>Josei</option>
+        <option>Sobrenatural</option>
+        <option>Psicológico</option>
+        <option>Mistério</option>
+        <option>Artes Marciais</option>
+        <option>Yaoi</option>
+        <option>+18</option>
+      </select>
+      <select id="filtro-lancamento">
+        <option value="">Ordenar por</option>
+        <option value="recentes">Lançamentos Recentes</option>
+        <option value="populares">Mais Populares</option>
+        <option value="favoritos">Favoritos</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="grid-mangas" style="padding-top: 80px;">
+    <!-- Cards serão renderizados via JavaScript -->
+  </main>
+
+  <div class="paginacao">
+    <!-- Paginação será gerada via JavaScript -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 YokaiScan</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="projetos.js"></script>
+  <script src="topbarsidebar.js"></script>
+
+</body>
+</html>
